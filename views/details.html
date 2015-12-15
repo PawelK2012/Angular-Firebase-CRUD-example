@@ -1,0 +1,15 @@
+<section>
+  <div ng-model="artists">
+   <a href="#/details/{{prevItem}}" class="btn btn-left">&lt;</a>
+    <a href="#/details/{{nextItem}}" class="btn btn-right">&gt;</a>
+  <!-- whichItem contain id that we get from controllers.js Detailscontroller 
+and use to display data about specific item  -->
+    <h1>{{artists[whichItem].name}}</h1>
+    <div>
+      <h3>{{artists[whichItem].reknown}}</h3>
+      <img ng-src="images/{{artists[whichItem].shortname}}_tn.jpg" alt="Photo of {{artists[whichItem].name}}">
+      <div >{{artists[whichItem].bio}}</div>
+    </div>
+  </div>
+  <a href="index.html">&laquo; Back to search</a>
+</section>
