@@ -59,7 +59,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
   }).
   when('/update/:itemId', {
      templateUrl: 'views/update.html',
-     controller: 'CreateItem',
+     controller: 'UpdateItem',
      resolve: {
       currentAuth: function(Authentication){
         return Authentication.requireAuth();

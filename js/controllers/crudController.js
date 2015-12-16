@@ -25,6 +25,15 @@ crudController.controller('CreateItem',
             });
             $scope.message = "";
         };//addMessage
+    }
+]);
+crudController.controller('UpdateItem', 
+    ['$scope','$routeParams', 'crudItems',
+    function($scope,$routeParams, crudItems) {
+
+        $scope.messages = crudItems;
+        $scope.whichItem = $routeParams.itemId;
+        $scope.rec = $scope.messages.$getRecord($scope.whichItem); 
 
         $scope.updateMessage = function(){
             var updateThisMessage = $scope.messages.$getRecord($scope.whichItem);
