@@ -1,0 +1,36 @@
+{
+    "name": "Budget-App",
+    "version": "1.0.0",
+    "description": "Budget app - an app that helps you manage your monthly budget on the go.",
+    "main": "index.js",
+    "dependencies": {
+        "bower": "^1.7.7",
+        "gulp": "^3.9.1",
+        "gulp-concat": "^2.6.0",
+        "gulp-sass": "^2.2.0",
+        "gulp-sourcemaps": "^1.6.0",
+        "http-server": "^0.6.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "prestart": "npm install",
+        "start": "http-server -a localhost -p 8000 -c-1",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "Budget App",
+        "url": "https://github.com/PawelK2012/Budget-web-client.git"
+    },
+    "keywords": [
+        "angularjs",
+        "firebase",
+        "starter",
+        "app"
+    ],
+    "author": "Pawel Kaim",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/PawelK2012/Budget-web-client"
+    },
+    "homepage": "https://github.com/PawelK2012/Budget-web-client"
+}

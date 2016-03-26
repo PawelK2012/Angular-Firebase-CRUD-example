@@ -1,0 +1,15 @@
+.budget-app {
+    // Utils 
+    @import 'app/sass/colors.scss';
+    @import 'app/sass/utils.scss';
+    @import 'app/sass/icons.scss';
+    @import 'app/sass/paper-input.scss';
+    // Views
+    @import 'app/sass/budget.scss';
+    @import 'app/sass/nav-menu.scss';
+    body {
+        background: $blue-50;
+        color: $blue-900;
+        font-weight: 300;     
+    }
+}

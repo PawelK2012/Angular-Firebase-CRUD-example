@@ -1,0 +1,218 @@
+@import 'app/sass/colors.scss';
+    .group {
+        position: relative;
+        margin-bottom: 45px;
+    }
+
+    .group-no-margin {
+        position: relative;
+    }
+    
+    .paper-input input {
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $blue-300;
+    }
+    
+    .paper-input input:focus {
+        outline: none;
+    }
+    
+    .paper-input label {
+        color: $blue-500;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+    
+    .paper-input input:focus ~ label,
+    .paper-input input.ng-dirty ~ label {
+        top: -20px;
+        font-size: 14px;
+        color: #5264AE;
+    }
+    
+    .bar {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    
+    .bar:before,
+    .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #5264AE;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+    
+    .bar:before {
+        left: 50%;
+    }
+    
+    .bar:after {
+        right: 50%;
+    }
+    
+    .paper-input input:focus ~ .bar:before,
+    .paper-input input:focus ~ .bar:after {
+        width: 50%;
+    }
+    
+    .highlight {
+        position: absolute;
+        height: 60%;
+        width: 225px;
+        top: 25%;
+        left: 0;
+        pointer-events: none;
+        opacity: 0.5;
+    }
+    
+    .paper-input input:focus ~ .highlight {
+        -webkit-animation: inputHighlighter 0.3s ease;
+        -moz-animation: inputHighlighter 0.3s ease;
+        animation: inputHighlighter 0.3s ease;
+    }
+    
+    @-webkit-keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+    
+    @-moz-keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+    
+    @keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+    
+    .paper-input input.ng-valid.ng-dirty {
+        border-bottom: 1px solid #4fc24f;
+    }
+    
+    .paper-input input.ng-valid.ng-dirty ~ .bar:before,
+    .paper-input input.ng-valid.ng-dirty ~ .bar:after {
+        background: #4fc24f !important;
+    }
+    
+    .paper-input input.ng-valid.ng-dirty ~ label {
+        color: #4fc24f;
+    }
+    
+    .paper-input input.ng-valid.ng-dirty:focus ~ .highlight {
+        -webkit-animation: validHighlighter 0.3s ease !important;
+        -moz-animation: validHighlighter 0.3s ease !important;
+        animation: validHighlighter 0.3s ease;
+    }
+    
+    @-webkit-keyframes validHighlighter {
+        from {
+            background: #4fc24f;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+    
+    @-moz-keyframes validHighlighter {
+        from {
+            background: #4fc24f;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+    
+    @keyframes validHighlighter {
+        from {
+            background: #4fc24f;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+    
+    .paper-input input.ng-invalid.ng-dirty {
+        border-bottom: 1px solid #d34336;
+    }
+    
+    .paper-input input.ng-invalid.ng-dirty ~ .bar:before,
+    .paper-input input.ng-invalid.ng-dirty ~ .bar:after {
+        background: #d34336 !important;
+    }
+    
+    .paper-input input.ng-invalid.ng-dirty ~ label {
+        color: #d34336;
+    }
+    
+    .paper-input input.ng-invalid.ng-dirty:focus ~ .highlight {
+        -webkit-animation: invalidHighlighter 0.3s ease;
+        -moz-animation: invalidHighlighter 0.3s ease;
+        animation: invalidHighlighter 0.3s ease;
+    }
+    
+    @-webkit-keyframes invalidHighlighter {
+        from {
+            background: #d34336;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+    
+    @-moz-keyframes invalidHighlighter {
+        from {
+            background: #d34336;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+    
+    @keyframes invalidHighlighter {
+        from {
+            background: #d34336;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
