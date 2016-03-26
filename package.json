@@ -1,7 +1,7 @@
 {
-    "name": "Budget-App",
+    "name": "Angular Firebase CRUD example",
     "version": "1.0.0",
-    "description": "Budget app - an app that helps you manage your monthly budget on the go.",
+    "description": "This app is an example how to CRUD data stored on Firebase with Angularfire a Firebase library for AngularJS.",
     "main": "index.js",
     "dependencies": {
         "bower": "^1.7.7",
@@ -18,19 +18,19 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
-        "type": "Budget App",
-        "url": "https://github.com/PawelK2012/Budget-web-client.git"
+        "type": "Angular Firebase CRUD example",
+        "url": "https://github.com/PawelK2012/Angular-Firebase-CRUD-example.git"
     },
     "keywords": [
         "angularjs",
         "firebase",
-        "starter",
-        "app"
+        "CRUD",
+        "example"
     ],
     "author": "Pawel Kaim",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/PawelK2012/Budget-web-client"
+        "url": "https://github.com/PawelK2012/Angular-Firebase-CRUD-example"
     },
-    "homepage": "https://github.com/PawelK2012/Budget-web-client"
+    "homepage": "https://github.com/PawelK2012/Angular-Firebase-CRUD-example"
 }

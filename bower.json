@@ -1,8 +1,8 @@
 {
-  "name": "Budget App",
-  "description": "",
-  "version": "0.0.1",
-  "homepage": "https://github.com/PawelK2012/Budget-web-client.git",
+  "name": "Angular Firebase CRUD example",
+  "description": "This app is an example how to CRUD data stored on Firebase with Angularfire a Firebase library for AngularJS.",
+  "version": "0.0.2",
+  "homepage": "https://github.com/PawelK2012/Angular-Firebase-CRUD-example",
   "license": "MIT",
   "private": true,
   "dependencies": {
