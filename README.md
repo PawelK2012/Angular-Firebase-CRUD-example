@@ -1,28 +1,26 @@
-# Budget-App
-Budget app - an app that helps you manage your monthly budget on the go. 
+# Angular Firebase CRUD example
+This ap is an example how to CRUD data stored on Firebase with Angularfire a Firebase library for AngularJS.
 
-This project relays on AngularJS & Firebase. We use Firebase to authenticate users and store data on the back-end. 
+You can check working example <a href="#">here</a>
+
+For a Firebase authenctication example please view this <a href="https://github.com/PawelK2012/Angular-Firebase-Authentication"> repository</a>
 
 #Project features: 
 
-- register user with Firebase
-- login user
-- log-out
-- create budget
-- view budget details
-- add expenses
-- add monthly expenses
-- angular form validation
+- Create firebase object
+- Read firebase object
+- Update firebase object
+- Delete firebase object
 
 #Getting Started
 
-To get you started you can simply clone the #Budget-App repository and install the dependencies:
+To get you started you can simply clone the #Angular Firebase CRUD example repository and install the dependencies:
 
-<h3>#Clone Budget-App</h3>
+<h3>#Angular Firebase CRUD example</h3>
 
-Clone the Budget-App repository using git:
+Clone the Angular-Firebase-CRUD-example repository using git:
 
- <code>git clone https://github.com/PawelK2012/Budget-web-client.git  </code>
+ <code>git clone https://github.com/PawelK2012/Angular-Firebase-CRUD-example.git  </code>
 
  <code>cd budget  </code>
 
@@ -57,26 +55,3 @@ You can update the Angular dependencies by running:
 
  <code> bower update  </code>
 
-
-#TO DO:
-- [ ] <strong>fix $rootScope issue in budgetservice</strong>
-- [x] <strong>investigate budget structure</strong>
-- [x] <strong>create different SASS modules for views, widgets & directives</strong>
-- [x] improve importing sass modules
-- [x] fix gulp sass output 
-- [x] create directive for nav menu
-- [ ] create user page
-- [ ] allow users to update profile
-- [ ] allow users to edit budget
-- [ ] allow users to create budget
-- [x] allow users to view budget
-- [x] set up git
-- [x] set up sass
-- [x] add form validation for login and register forms
-- [x] clean up package.json and add required dependencies
-- [ ] home page design
-- [ ] budget page design
-- [ ] view budget design
-- [ ] profile page design
-- [ ] wireframes
-- [x] delete budget
