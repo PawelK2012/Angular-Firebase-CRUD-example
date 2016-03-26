@@ -27,7 +27,7 @@
 <div class="container create-blog">
     <div class="row">
         <div class="col-xs-12" ng-repeat="(key, blog) in vm.getAllBlogPosts">
-            <h2>{{blog.title}}</h2>
+            <h2>{{key+1}}.{{blog.title}}</h2>
             <article>
                 <p>{{blog.text}}</p>
             </article>
