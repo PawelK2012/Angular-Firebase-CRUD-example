@@ -16,9 +16,7 @@
         var service = {
             creatBlog: creatBlog,
             updateBlog: updateBlog,
-            getAllBlogPosts: getAllBlogPosts,
-            deleteBlog: deleteBlog
-
+            getAllBlogPosts: getAllBlogPosts
         };
 
         return service;
@@ -34,10 +32,12 @@
             });
         }
 
-        function updateBlog(id, budgetTitle) {
-            var udpdatedBudget = budgetsobj[id];
-            udpdatedBudget.title = budgetTitle;
-            budgetsobj.$save(udpdatedBudget).then(function(ref) {
+        function updateBlog(id, title, desc) {
+            var udpdatedBlog = blogobject[id];
+            udpdatedBlog.title = title;
+            udpdatedBlog.text = desc;
+            // Save updated blog back to firebase
+            blogobject.$save(udpdatedBlog).then(function(ref) {
                 // Do something
             });
         }
@@ -48,11 +48,6 @@
             // all server changes are applied in realtime
             return allBlogPosts = $firebaseArray(ref);
         }
-
-        function deleteBlog(key) {
-            budgetsobj.$remove(key);
-        }
-
 
     }
 })();

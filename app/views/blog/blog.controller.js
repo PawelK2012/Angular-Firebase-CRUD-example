@@ -22,11 +22,18 @@
         var vm = this;
         // We get all blog post from blog service
         vm.getAllBlogPosts = blogservice.getAllBlogPosts();
-        vm.createBlogPost = function(blogTtitle, blogContent){
+        vm.createBlogPost = function(blogTtitle, blogContent) {
             blogservice.creatBlog(blogTtitle, blogContent);
             // Clear form inputs
             vm.blogTtitle = "";
             vm.blogContent = "";
+        }
+        vm.updateBlog = function(id, title, desc) {
+            blogservice.updateBlog(id, title, desc);
+            $('#myModal').modal('hide');
+            // Clear inputs 
+            vm.updateTitle = "";
+            vm.updateContent = "";
         }
     };
 

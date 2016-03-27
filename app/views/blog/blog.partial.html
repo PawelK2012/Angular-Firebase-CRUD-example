@@ -6,7 +6,7 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label">Title</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" data-ng-model="vm.blogTtitle" placeholder="Title">
+                        <input type="text" class="form-control" data-ng-model="vm.blogTitle" placeholder="Title">
                     </div>
                 </div>
                 <div class="form-group">
@@ -17,7 +17,7 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-default pull-right" data-ng-click="vm.createBlogPost(vm.blogTtitle, vm.blogContent)">Create blog</button>
+                        <button type="submit" class="btn btn-default pull-right" data-ng-click="vm.createBlogPost(vm.blogTitle, vm.blogContent)">Create blog</button>
                     </div>
                 </div>
             </form>
@@ -31,8 +31,41 @@
             <article>
                 <p>{{blog.text}}</p>
             </article>
-            <button type="submit" class="btn btn-default pull-right" data-ng-click="vm.getAllBlogPosts.$remove(blog)">Delete blog</button>
+            <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal" ng-click="vm.postToBeUpdated = key">Update blog</button>
+            <button type="submit" class="btn btn-danger" data-ng-click="vm.getAllBlogPosts.$remove(blog)">Delete blog</button>
             <hr>
         </div>
     </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Update your post</h4>
+      </div>
+      <div class="modal-body">
+          <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Title</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" data-ng-model="vm.updateTitle" placeholder="Title">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Text content</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" rows="3" data-ng-model="vm.updateContent" placeholder="Blog content"></textarea>
+                    </div>
+                </div>
+            </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-ng-click="vm.updateBlog(vm.postToBeUpdated, vm.updateTitle, vm.updateContent)">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>

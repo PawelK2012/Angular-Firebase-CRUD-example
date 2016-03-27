@@ -1,5 +1,5 @@
 {
-    "name": "Angular Firebase CRUD example",
+    "name": "Angular Firebase CRUD example.",
     "version": "1.0.0",
     "description": "This app is an example how to CRUD data stored on Firebase with Angularfire a Firebase library for AngularJS.",
     "main": "index.js",
