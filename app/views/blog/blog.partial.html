@@ -26,7 +26,15 @@
 </div>
 <div class="container create-blog">
     <div class="row">
-        <div class="col-xs-12" ng-repeat="(key, blog) in vm.getAllBlogPosts">
+    <div class="col-xs-12">
+            <label>
+                <input type="radio" ng-model="direction" name="direction" checked> ascending
+            </label>
+            <label>
+                <input type="radio" ng-model="direction" name="direction" value="reverse"> descending
+            </label>
+        </div>
+        <div class="col-xs-12" ng-repeat="(key, blog) in vm.getAllBlogPosts | orderBy: whyIamHere:direction">
             <h2>{{key+1}}.{{blog.title}}</h2>
             <article>
                 <p>{{blog.text}}</p>
