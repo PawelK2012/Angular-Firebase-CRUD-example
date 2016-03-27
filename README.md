@@ -1,7 +1,7 @@
 # Angular Firebase CRUD example
-This ap is an example how to CRUD data stored on Firebase with Angularfire a Firebase library for AngularJS.
+This app is an example how to CRUD data stored on Firebase with Angularfire a Firebase library for AngularJS. 
 
-You can check working example <a href="#">here</a>
+You can check working example <a href="http://pawelkaim.com/d/angular-firebase-crud/">here</a>
 
 For a Firebase authenctication example please view this <a href="https://github.com/PawelK2012/Angular-Firebase-Authentication"> repository</a>
 

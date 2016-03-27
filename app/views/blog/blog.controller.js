@@ -25,7 +25,7 @@
         vm.createBlogPost = function(blogTtitle, blogContent) {
             blogservice.creatBlog(blogTtitle, blogContent);
             // Clear form inputs
-            vm.blogTtitle = "";
+            vm.blogTitle = "";
             vm.blogContent = "";
         }
         vm.updateBlog = function(id, title, desc) {
