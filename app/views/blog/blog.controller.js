@@ -30,6 +30,10 @@
         }
         vm.updateBlog = function(id, title, desc) {
             blogservice.updateBlog(id, title, desc);
+            $('#myModal').modal('hide');
+            // Clear inputs 
+            vm.updateTitle = "";
+            vm.updateContent = "";
         }
     };
 
